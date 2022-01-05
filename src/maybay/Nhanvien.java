@@ -1,6 +1,6 @@
 package maybay;
 import java.util.Scanner;
-public class Nhanvien implements TongCong {
+public class Nhanvien  {
 protected  String manhanVien;
 protected   String TennhanVien;
 	
@@ -35,16 +35,5 @@ protected   String TennhanVien;
     {
     	return manhanVien+" "+TennhanVien;
     }
-	public void TongsoNguoi()
-	{
-		Scanner sc=new Scanner(System.in);
-		 System.out.println("Nhap so hanh ly nhan vien mang theo ");
-		 int a=Integer.parseInt(sc.nextLine());
-		 System.out.println("Nhap so ma nhan vien");
-		 int b=Integer.parseInt(sc.nextLine());
-		 int s=a*b;
-		 System.out.println("Tong so hanh ly cua nhan vien:"+s);
-	}
-	
 
 }

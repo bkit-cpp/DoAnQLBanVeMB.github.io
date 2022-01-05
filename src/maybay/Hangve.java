@@ -1,8 +1,9 @@
 package maybay;
 import java.util.Scanner;
-public class Hangve {
+public class Hangve extends VeChuyenBay {
 	protected String mahangVe;
 	protected String tenhangVe;
+	protected float GiaLoaiVe;
 	public Hangve() {
 		
 	}
@@ -22,6 +23,14 @@ public class Hangve {
 	public void setTenhangVe(String tenhangVe) {
 		this.tenhangVe = tenhangVe;
 	}
+	public float getGiaLoaiVe()
+	{
+		return GiaLoaiVe;
+	}
+	public void setGiaLoaiVe(float GiaLoaiVe)
+	{
+		this.GiaLoaiVe=GiaLoaiVe;
+	}
 
 public void nhaptt()
 {
@@ -30,6 +39,13 @@ public void nhaptt()
 	mahangVe=sc.nextLine();
 	System.out.println("Nhap ten hang ve ");
 	tenhangVe=sc.nextLine();
+	System.out.println("Nhap Gia Loai Ve");
+	GiaLoaiVe=Integer.parseInt(sc.nextLine());
+}
+@Override
+public void tongtienphaitra()
+{
+	float s=super.getphidichvu()+super.getphiquantri()+super.getphisanbay()+super.getgiave()*23000+GiaLoaiVe;
 }
 public String toString()
 {

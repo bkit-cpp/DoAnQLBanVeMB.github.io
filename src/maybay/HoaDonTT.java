@@ -30,7 +30,6 @@ protected float thanhTien;
 	 System.out.println("Nhap Thanh Tien");
 	 thanhTien=Float.parseFloat(sc.nextLine());
 	}
-	@Override  //NhapXuat File
 	public  void Tongdoanhthu(){}
 	public String toString()
 	{
